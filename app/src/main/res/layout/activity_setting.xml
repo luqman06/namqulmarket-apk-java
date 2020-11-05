@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SettingActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_setting">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/close_aetting_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/update_account_setting_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/addstore"
+        android:layout_below="@+id/app_bar_setting"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/setting_profile_imaage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_imaage_change_btn"
+        android:text="Change Profile"
+        android:textSize="17sp"
+        android:layout_marginRight="10dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/setting_profile_imaage"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_phone_number"
+        android:layout_below="@+id/profile_imaage_change_btn"
+        android:hint="Phone Number..."
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_full_name"
+        android:layout_below="@+id/setting_phone_number"
+        android:hint="Full Name..."
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_address"
+        android:layout_below="@+id/setting_full_name"
+        android:hint="Address..."
+        android:layout_margin="15dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/security_question_btn"
+        android:layout_below="@+id/setting_address"
+        android:text="Set Sucurity Questions"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_margin="15dp"/>
+
+
+
+
+
+
+</RelativeLayout>
